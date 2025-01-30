@@ -22,6 +22,7 @@ body {
     background-color: #4b4b4b;
     width: 100%;
     overflow: hidden;
+    max-width: 1420px;
 }
 
 header {
@@ -304,6 +305,13 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.side_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 ::-webkit-scrollbar {
