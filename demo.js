@@ -46,17 +46,19 @@
   
         let div3 = document.createElement('div');
               div3.className='div3';
+        let spn = document.createElement('span')
+            spn.textContent='Rs.'
+
         let   total_p= document.createElement('p') ;          
-              total_p.textContent=`${amount[i].textContent}`;
+              total_p.textContent=amount[i].textContent;
+
         let dele = document.createElement('i');
               dele.className="fa-solid fa-trash-can";
-  
-          div3.append(total_p,dele);
-  
+
+          spn.append(total_p)   ;  
+          div3.append(spn,dele);
           main.append(div1,cont)
-  
           a.append(main,div3);
-  
           sideul.appendChild(a)
       
           let car_count = document.getElementById('count');
@@ -77,20 +79,18 @@
   
               let car_cont= Array.from( document.querySelectorAll('.div2>p'));
               let a =car_cont.find(n=>{ return n.textContent===content[i].textContent ? true : false})
-             return a;
-             
+              return a;
           } 
           
           let side_rpe = Array.from(document.querySelectorAll('.div2>span>p')),
                side_inp = Array.from(document.querySelectorAll('.div2>input')),
               
               total = document.querySelector('.order>p>span');
-              
-              
+                          
               side_inp.forEach((n,i)=>{
                   n.addEventListener('click',()=>{
                         main_total=0;
-                      let  side_total = Array.from(document.querySelectorAll('.div3>p'));
+                      let  side_total = Array.from(document.querySelectorAll('.div3>span>p'));
                       let a = Number(side_rpe[i].textContent)*Number(side_inp[i].value);
                       side_total[i].innerHTML=a;
                                 

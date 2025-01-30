@@ -5,8 +5,6 @@
     font-family: 'Arial', sans-serif;
 }
 
- 
-
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -167,7 +165,7 @@ h2 {
 }
 
 .side {
-    position: absolute;
+    position: fixed;
     background-color: #f4f4f4;
     top: 0;
     right: -500px;
@@ -222,7 +220,6 @@ h2 {
 
 .toggleSide {
     right: 0;
-    position: fixed;
 }
 
 .side>ul{
@@ -259,14 +256,13 @@ h2 {
 
 .div2>p{
     color: #dc143c;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .div2 span{
     display: flex;
-    gap: 10px;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -285,7 +281,14 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.div3>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div3 i{
@@ -293,10 +296,7 @@ h2 {
     color: red;
 }
 
-.div3 p{
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+
 
 .div1{
     height: 90px;
@@ -348,10 +348,6 @@ h2 {
         width: 100%;
         height: auto;
     }
-
-    /* .side{
-        width: 100%;
-    } */
 
     .order {
         flex-direction: column;
